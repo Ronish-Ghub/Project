@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="word">
+    <textarea name="" id="content" cols="30" rows="10"></textarea>
+    <button onclick="search()">Find</button>
+    <script>
+        function search(){
+            let inp=document.getElementById("word").value
+            let txt=document.getElementById("content").value
+            let regex=new RegExp(inp,"g")
+            let newreg=txt.replace(regex,"<span style=`background-color:yellow`>"+inp+"</span>")
+            document.getElementById("para").innerHTML=newreg
+        }
+    </script>
+    <p id="para"></p>
+</body>
+</html>

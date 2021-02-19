@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styleee.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap" rel="stylesheet">
+    <style>
+        @media(min-width: 576px) {
+            .demo {
+                color: blue;
+            }
+        }
+
+        @media(max-width: 576px) {
+            .demo {
+                color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body >
+
+
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div >
+                <h1><span class="styling">TODO</span>list</h1>
+            </div>
+            <div class="input_div">
+                <input class="input" type="text" placeholder="what do you want to do...." id="s1"  >
+
+
+            
+
+                <button class="addbutton" onclick="add()"><i class="fas fa-plus"></i>+</button>
+
+
+            </div>
+            <ul class="styling" id="ull" style="color: white;"></ul>
+
+        </div>
+        <div class="col-sm-6">
+
+            <div>
+                <h1><span class="styling">DON'T DO</span>list</h1>
+                
+                        </div>
+                        <ul class="styling" id="ulll" style="color: white;"></ul>
+            
+
+
+        </div>
+
+<ul id="ppp"></ul>
+
+    </div>
+    <script>
+        let words = []
+let array=[]
+        function add() {
+            // let words=[]
+            word = document.getElementById("s1").value
+            words.push(word)
+
+            console.log(words)
+            //for(word of words)
+            //{
+            let li = document.createElement("li")
+            var removebtn = document.createElement("button")
+            var b = document.createElement("button")
+            removebtn.innerHTML = "remove"
+            b.innerHTML = "MOVE"
+            b.style.background = "lime"
+            removebtn.style.background = "lime"
+
+            removebtn.addEventListener('click', function remov() {
+                wordss = document.getElementById("s1").value
+               // let intex = array.indexOf(wordss)
+              //  let intex = words.indexOf(wordss)
+              //  array.indexOf(intex - 1, 1)
+var re=document.getElementById("ppp").appendChild(li).removeChild(b)
+re=document.getElementById("ppp").appendChild(li).removeChild(removebtn)
+//re.remove()
+words.shift(wordss)
+console.log(words)
+            
+
+            })
+            b.addEventListener('click', function move() {
+
+                word = document.getElementById("s1").value
+               // let intex = words.indexOf(word)
+                // let li=document.createElement("li")
+                //  li.innerText.words(intex)
+
+               // words.splice(intex-1 ,1 )
+               // console.log(intex)
+                // words.pop(word) 
+                //   let li=doc
+                console.log(word)
+
+                console.log(words)
+
+                document.getElementById("ulll").removeChild(b)
+                document.getElementById("ulll").removeChild(removebtn)
+
+
+
+            })
+            li.innerText = word
+
+            document.getElementById("ull").appendChild(li).appendChild(b)
+            document.getElementById("ull").appendChild(li).appendChild(removebtn)
+
+            //}
+        }
+
+    </script>
+
+
+
+</body>
+</html>

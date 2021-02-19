@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {}
+        person.name = "anna"
+        console.log(person)
+        person.display = function () {
+            console.log(this.name)
+        }
+        person.display()
+        let student=Object.create(person)
+        student.mark = 100
+        student.rollnumber = "2"
+        console.log(student)
+        let obj1={"name":"anna"}
+        let obj2={"name":"anna"}
+        //obj1=obj2
+        // obj1=obj.assign(obj2)
+        console.log(obj1==obj2)
+        //Object.freeze(student)
+        student.bach="bca"
+        student.sub="any"
+        console.log(student)
+        console.log(Object.isFrozen(student))
+        Object.seal(student)
+        student.mark=200
+        student.sub="any"
+        console.log(student)
+        console.log(Object.isSealed(student))
+
+    </script>
+</body>
+
+</html>

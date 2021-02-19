@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function calculate(f,a,b){
+        return f(a,b)
+   }
+   let add=function(x,y){
+       return x+y
+   }
+   let sub=function(x,y){
+       return x-y
+   }
+   calculate(add,10,20)
+   function outer(){
+       let k=123
+       function inner(){
+           console.log("inner function inner k=",k)
+       }
+       inner()
+       }
+       outer()
+       function volume(h)
+       {
+           return function(b){
+               return function(h){
+                   return 1*b*h
+               }
+           }
+       }
+       let data=volume(100)
+       console.log(data)
+       let f=data(50)
+       console.log(f(10))
+       var a=[10,20,30]
+       a[10]=9
+       console.log(a[6])
+       var names=["anna","bib","vasu","vishnu","soman","aswin"]
+       let newarry=names.filter((name)=>{
+           if (name.startsWith("v")){
+               return name
+           }
+       })
+       alert(newarry)
+       let s=[1,2,3,4,5,6]
+       let arr2=s.map((item)=>{
+           return item**2
+       })
+       console.log(arr2)
+       let result=s.reduceRight((x,y)=>{
+           console.log("x",x)
+           console.log("y",y)
+        return x+y
+       })
+       console.log(result1)
+    </script>
+    
+</body>
+</html>

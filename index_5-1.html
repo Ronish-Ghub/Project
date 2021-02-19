@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validate(){
+            let regrex=/java/g
+            let input="java is compiled and interpreted,java is object orianted"
+            let newinput=input.replace(regrex,"java script")
+            console.log(newinput)
+            // let reg=/^\d{10}$/
+            // let mobile=document.getElementById("mobile").Value
+            // if(reg.test(mobile)){
+            //     alert("value mobile number")
+
+            // }else{
+            //     alert("Invalid mobile number")
+            // }
+        }
+    </script>
+    <input type="text" name="" id="mobile">
+    <button onclick="validate()">Click</button>
+</body>
+</html>

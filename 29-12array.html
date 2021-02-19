@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<ul><li id="lil"></li></ul>
+<body>
+    <script>
+        let arr=[]
+        console.log(arr)
+        console.log(typeof arr)
+let names=[`anna`,`raj`,`gogul`,`ronish`]
+console.table(names)
+console.log(names.length)
+names.push("shahid")
+console.table(names)
+console.log(names.length)
+names.pop("shahid")
+console.table(names)
+names.shift()
+console.table(names)
+names.unshift("shahid")
+console.table(names)
+names.slice(2,1)
+console.table(names)
+for(name of names){
+    alert(name)
+}
+for(index in names){
+    alert(index)
+}
+for(let name of names){
+ li=document.createElement("li")
+li.innerText=name
+document.getElementById("lil").appendChild(li)
+}
+console.log(names.indexOf("kevin"))
+console.log(names[2])
+names[4]="alan"
+console.log(names)
+names.concat(names)
+newarray=names.concat(["ami","rini","dona"])
+console.log(newarray)
+let s="hi iam doing nathing"
+let words=s.split(" ")
+for(word of words)
+{
+    console.log(word)
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student={name:"panav",age:20,rollno:3,greeting:function()
+    {
+        console.log("hi gays")
+        console.log("name=",this.name)
+
+    },marks:[90,50,60],average:function(){
+        let sum=0
+        for(mark of this.marks){
+            sum+=mark
+        }
+        return sum/this.marks.length
+    }
+    }
+    student.name="anna rose"
+    student.address="H101 NYC"
+    console.log(student)
+    console.log(student.name)
+    console.log(student.age)
+    console.log(student.rollno)
+    console.log(student.address)
+    console.log(student.marks)
+    student.greeting()
+   x=student.average()
+   console.log(x)
+    </script>
+</body>
+</html>

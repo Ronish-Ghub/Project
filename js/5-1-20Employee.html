@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <script src="../js/5-1-20Employee.js"></script>
+</head>
+<body>
+    
+        <div class="col-md-6">
+          <label for="inputname4" class="form-label">Name</label>
+          <input type="text" class="form-control" id="nam">
+        </div>
+        <div class="col-md-6">
+          <label for="inputid4" class="form-label">Id</label>
+          <input type="text" class="form-control" id="id">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Depatrment</label>
+          <select id="dep" class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected>Choose...</option>
+                <option>Distribution</option>
+                <option>Testing</option>
+                <option>Manipulation</option>
+          </select>
+        </div>
+        <div>
+           <label for="">Gender</label>
+           <div >
+            <label for="">Male</label>
+            <input type="radio" name="g" value="Male">
+            <label for="">Femail</label>
+            <input type="radio" name="g" value="Femail">
+        </div>
+        </div>
+      <div class="col-12">
+        <button onclick="add()" class="btn btn-primary">Add</button>
+      </div><br>
+      <div class="col-12">
+        <button onclick="create()" class="btn btn-primary">View</button>
+      </div>
+      <ul id="p"></ul>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id='d1'>
+
+    </div>
+    <button onclick="create()">Click</button>
+    <div id="d2"></div>
+    
+    <script>
+        count=0
+    function create(){
+count++
+let para=document.createElement("p")
+let input=document.createElement("input")
+para.innerText=`asdhfuasyafhdjhfgkjhg safhbkajs ${count} sdgdsd`
+document.getElementById("d1").appendChild(para)
+input.value=new Date()
+document.getElementById("d2").appendChild(input)
+let obj=new Date()
+alert(obj)
+    }
+    let obj=new Date()
+    document.getElementById("d2").innerHTML=`<input type='text' value=${obj}>`
+    </script>
+</body>
+</html>

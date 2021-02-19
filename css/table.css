@@ -1,0 +1,27 @@
+table{
+    border-collapse: collapse;
+    width: 300px;
+}
+.tab_hd{
+    background-color: aqua;
+}
+.tab_hd:hover{
+    background-color: brown;
+}
+.tab_ro1{
+    background-color: rgba(134, 122, 122, 0.411);
+}
+.tab_ro1:nth-child(odd){
+    background-color: rgb(231, 235, 14);
+}
+.tab_ro2{
+    background-color: rgba(33, 47, 175, 0.411);
+}
+.tab_ro2:hover{
+    background-color: rgb(14, 235, 187);
+}.tab_ro3{
+    background-color: rgba(174, 15, 223, 0.411);
+}
+.tab_ro3:nth-child(odd){
+    background-color: rgb(221, 20, 13);
+}

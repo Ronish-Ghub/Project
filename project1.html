@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-6">
+            <center><u>
+                    <h2>To Do</h2>
+                </u><br><br>
+                <div id="txt">
+                    <input type="text" id="txt1"><br><br>
+                    <div><button onclick="txte()">+</button></div>
+                </div>
+            </center>
+        </div>
+        <div class="col-sm-6">
+            <center><u>
+                    <h2>Tomorrow</h2>
+                </u></center>
+        </div>
+    </div>
+    <ul id="l">
+        
+    </ul>
+    <script>
+        var a = []
+        function txte() {
+            txt = document.getElementById("txt1").value
+            let to = document.createElement("li")
+            to.innerHTML=txt
+            document.getElementById("l").appendChild(to)
+            a.push(txt)
+            console.log(a)
+            var x=document.createElement("button")
+            var y=document.createElement("button")
+            var m=document.createTextNode("Move")
+            var r=document.createTextNode("Reove")
+            x.appendChild(m)
+            y.appendChild(r)
+            document.body.appendChild(x)
+            document.body.appendChild(y)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.min.css">
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <button onclick="check()">check</button>
+    <script>
+        function check(){
+            var regex=/(\d{10}|\(0484\)-\d{7}|\d{4}-\d{7})/g;
+            var input="my phone number is 9765432100 and my office no is (0484)-2242021 and fax no is 0484-2265254"
+            alert(input.match(regex))
+        }
+    </script>
+</body>
+</html>

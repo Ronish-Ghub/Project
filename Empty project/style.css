@@ -1,0 +1,15 @@
+div{
+    background-color: blueviolet;
+    width: 200%;
+    height: 300%;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 550%;
+    font-weight: bold;
+    color: rgb(18, 100, 223);
+}
+.demo{
+    background-clip: padding-box;
+    color: brown;
+}

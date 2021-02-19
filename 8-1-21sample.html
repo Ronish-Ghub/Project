@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //call,apply,bind
+        let person={name:"anna",age:12,display:function(msg,date)
+        {
+            console.log(`${msg} name ${this.name} age ${this.age} ${date}`)
+        }
+    }
+    let student={name:"anna",age:15}
+    person.display.call/*.apply(arry,immediate call)*/(student,"Good moring",new Date())
+    let f=person.display.bind/*partial funtion,not directly in voke*/(student,"Good eve")
+    f(new Date())
+    localStorage.setItem("name1","anna")
+    localStorage.setItem("name2","asha")
+    localStorage.setItem("name3","anu")
+    localStorage.setItem("name4","ammu")
+    console.log(localStorage.getItem("name1"))
+    console.log(localStorage.length)
+    </script>
+</body>
+</html>
